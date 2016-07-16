@@ -1,0 +1,19 @@
+{
+  "name": "mm-bootstrap-node",
+  "version": "1.0.0",
+  "description": "Operational logic for MicroMinion bootstrap node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicroMinion/mm-bootstrap-node.git"
+  },
+  "author": "Thomas Delaet <thomas@delaet.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicroMinion/mm-bootstrap-node/issues"
+  },
+  "homepage": "https://github.com/MicroMinion/mm-bootstrap-node#readme",
+  "dependencies": {
+    "tweetnacl": "^0.14.3",
+    "tweetnacl-util": "^0.13.3"
+  }
+}
