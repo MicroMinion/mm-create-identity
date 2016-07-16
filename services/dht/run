@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#TODO: FIND OUT HOW TO GET IP ADDRESS HERE IN RELIABLE WAY
+var ADDRESS="127.0.0.1"
+
+echo 47810 > ./env/PORT
+echo ${ADDRESS} > ./env/IP_ADDRESS
+
+if [ ! -e ./env/IDENTITY ]
+then
+  /usr/local/bin/create-identity > ./env/IDENTITY
+fi
+
+exec envdir ./env sudo docker run -p ${PORT}:${PORT} -it --name mm-dht mm/dht
