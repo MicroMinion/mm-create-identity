@@ -1,17 +1,20 @@
 {
-  "name": "mm-bootstrap-node",
+  "name": "mm-create-identity",
   "version": "1.0.0",
-  "description": "Operational logic for MicroMinion bootstrap node",
+  "description": "Create identity for MicroMinion nodes",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MicroMinion/mm-bootstrap-node.git"
+    "url": "git+https://github.com/MicroMinion/mm-create-identity.git"
+  },
+  "bin": {
+    "mm-create-identity": "./scripts/create-identity"
   },
   "author": "Thomas Delaet <thomas@delaet.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MicroMinion/mm-bootstrap-node/issues"
+    "url": "https://github.com/MicroMinion/mm-create-identity/issues"
   },
-  "homepage": "https://github.com/MicroMinion/mm-bootstrap-node#readme",
+  "homepage": "https://github.com/MicroMinion/mm-create-identity#readme",
   "dependencies": {
     "tweetnacl": "^0.14.3",
     "tweetnacl-util": "^0.13.3"
