@@ -1,10 +1,14 @@
 {
   "name": "mm-create-identity",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Create identity for MicroMinion nodes",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MicroMinion/mm-create-identity.git"
+  },
+  "scripts": {
+    "test": "echo",
+    "2npm": "publish"
   },
   "bin": {
     "mm-create-identity": "./scripts/create-identity"
@@ -20,5 +24,8 @@
     "qr-image": "^3.1.0",
     "tweetnacl": "^0.14.3",
     "tweetnacl-util": "^0.13.3"
+  },
+  "devDependencies": {
+    "publish": "^0.6.0"
   }
 }
