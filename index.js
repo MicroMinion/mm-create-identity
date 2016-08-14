@@ -21,6 +21,15 @@ var createSecret = function () {
   return nacl.util.encodeBase64(nacl.randomBytes(100))
 }
 
+var createShortSecret = function () {
+  var text = ''
+  var possible = '0123456789'
+  for (var i = 0; i < 6; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length))
+  }
+  return text
+}
+
 var createKeyPair = function () {
   var keyPair = nacl.sign.keyPair()
   return {
@@ -44,6 +53,7 @@ var createQrImageWithSecret = function (publicKey, secret, destination) {
 module.exports = {
   createIdentity: createIdentity,
   createKeyPair: createKeyPair,
-  createQrImageWithSecret: createQrImageWithSecret,
-  createSecret: createSecret
+  createShortSecret: createShortSecret,
+  createSecret: createSecret,
+  createQrImageWithSecret: createQrImageWithSecret
 }
